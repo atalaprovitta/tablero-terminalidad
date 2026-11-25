@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terminalidad Educativa — Tableros de seguimiento</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Archivo', -apple-system, 'Segoe UI', sans-serif; background: #F4F5F7; color: #111; min-height: 100vh; display: flex; flex-direction: column; }
+.header {
+    background: #111; padding: 24px 20px; border-bottom: 5px solid #FFD100;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap; justify-content: center;
+}
+.logo {
+    background: #FFD100; color: #000; font-weight: 800; font-size: 22px;
+    width: 50px; height: 50px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brand { color: #fff; line-height: 1.15; font-size: 12px; }
+.brand b { font-size: 16px; }
+.sep { width: 1px; height: 44px; background: #444; }
+.title { color: #fff; font-size: 20px; font-weight: 700; }
+.subtitle { color: #c9c9c9; font-size: 12px; }
+.badge {
+    background: #FFD100; color: #000; font-weight: 700;
+    font-size: 11px; padding: 5px 12px; border-radius: 20px;
+}
+.main { flex: 1; max-width: 800px; margin: 0 auto; padding: 40px 20px; width: 100%; }
+h1 { font-size: 26px; font-weight: 700; margin-bottom: 8px; }
+.desc { color: #555; font-size: 15px; margin-bottom: 32px; line-height: 1.5; }
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+.card {
+    background: #fff; border: 2px solid #e4e6ea; border-radius: 14px;
+    padding: 28px 24px; text-decoration: none; color: #111;
+    transition: all .2s; display: flex; flex-direction: column; gap: 10px;
+}
+.card:hover { border-color: #00857c; box-shadow: 0 4px 20px rgba(0,133,124,.15); transform: translateY(-2px); }
+.card-title { font-size: 18px; font-weight: 700; color: #00857c; }
+.card-desc { font-size: 14px; color: #555; line-height: 1.5; }
+.card-meta { font-size: 12px; color: #999; margin-top: auto; }
+.foot {
+    color: #8a8f98; font-size: 12px; padding: 16px 20px;
+    border-top: 1px solid #e4e6ea; text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="header">
+    <div class="logo">BA</div>
+    <div class="brand">Buenos Aires<br><b>Ciudad</b></div>
+    <div class="sep"></div>
+    <div>
+        <div class="title">Terminalidad Educativa</div>
+        <div class="subtitle">Ministerio de Desarrollo Humano y H&aacute;bitat &middot; SSDPH</div>
+    </div>
+    <div class="badge">USO INTERNO</div>
+</div>
+<div class="main">
+    <h1>Tableros de seguimiento</h1>
+    <p class="desc">
+        Sistema de gesti&oacute;n de informaci&oacute;n del programa Terminalidad Educativa.
+        Dos versiones del tablero, seg&uacute;n la inclusi&oacute;n de la poblaci&oacute;n CPL-PyV.
+    </p>
+    <div class="cards">
+        <a class="card" href="tablero_sin_cpl.html">
+            <div class="card-title">Tablero sin CPL-PyV</div>
+            <div class="card-desc">
+                Poblaci&oacute;n del programa Terminalidad Educativa
+                (abordaje individual: ATP, CP, B.Mugica, AT/DGEPS, CEDEL, G&eacute;neros, PAE, etc.)
+            </div>
+            <div class="card-meta">Datos actualizados a septiembre 2026</div>
+        </a>
+        <a class="card" href="tablero_con_cpl.html">
+            <div class="card-title">Tablero con CPL-PyV</div>
+            <div class="card-desc">
+                Incluye adicionalmente la poblaci&oacute;n de PyV (CPL):
+                732 personas del abordaje colectivo integradas al tablero.
+            </div>
+            <div class="card-meta">Datos actualizados a septiembre 2026</div>
+        </a>
+    </div>
+</div>
+<div class="foot">
+    Gobierno de la Ciudad de Buenos Aires &middot; MDHyH &middot; SSDPH &middot;
+    Sistema de Gesti&oacute;n de Informaci&oacute;n — Terminalidad Educativa
+</div>
+</body>
+</html>
